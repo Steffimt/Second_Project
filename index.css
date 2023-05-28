@@ -1,0 +1,470 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+.brown {
+  background-color: #441f17;
+}
+.rectangle {
+  height: 5rem;
+  display: flex;
+}
+.yellow {
+  background-color: #f4f0db;
+}
+.rectangle2 {
+  width: 100%;
+  height: 3rem;
+}
+.rectangles {
+  width: 100%;
+  height: 3rem;
+}
+.logo img {
+  margin: 1rem;
+  width: 3.5rem;
+  height: 3rem;
+  position: absolute;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  color: white;
+  width: 100%;
+  padding-top: 1.3rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.menu ul {
+  margin-top: 0.9rem;
+  list-style: none;
+  display: flex;
+}
+.menu li a {
+  font-family: cursive;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+  padding: 0 1.5rem;
+  display: block;
+}
+.menu li a:hover {
+  text-shadow: 2px 2px 4px #441f17;
+}
+.toggle-btn {
+  position: absolute;
+  top: 5.5rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.8rem;
+  height: 1rem;
+}
+.toggle-btn .bar {
+  height: 2.5px;
+  width: 100%;
+  background-color: #441f17;
+  border-radius: 10px;
+}
+.content {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  justify-content: center;
+}
+.banner {
+  width: 100%;
+  height: 28rem;
+  background-image: url(assets/background.jpg);
+  background-size: cover;
+  text-align: center;
+}
+.banner2 {
+  height: 10rem;
+  width: 100%;
+  background-image: url(assets/melt2.png);
+  background-size: cover;
+}
+.content p {
+  text-align: center;
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
+  margin-bottom: 8rem;
+  color: #4a3020;
+  font-size: 2.5rem;
+  padding-top: 10rem;
+}
+.rectangle3 {
+  justify-content: center;
+  width: 100%;
+  height: 45rem;
+  background-color: #705651;
+  align-items: center;
+}
+.best-selling {
+  margin: 1.5rem 1rem;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.rectangle3 h3 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  line-height: 0.1em;
+  border-bottom: 1.5px solid #bba14f;
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #bba14f;
+}
+.rectangle3 span {
+  padding: 0 1.5rem;
+  background-color: #705651;
+}
+.resize {
+  height: 9.4rem;
+  width: 9.4rem;
+  border-radius: 50%;
+  margin: 0.3rem;
+}
+.circle {
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  margin-top: 2rem;
+  height: 10rem;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+.layer {
+  margin: 0.3rem;
+  color: transparent;
+  background: transparent;
+  font-size: 1rem;
+  font-family: arial;
+  transition: 0.3s;
+  border-radius: 50%;
+  height: 9.4rem;
+  width: 9.4rem;
+  top: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layer:hover {
+  font-family: arial;
+  font-size: 1rem;
+  color: white;
+  background: rgba(68, 31, 23, 0.8);
+}
+.recommended {
+  margin: 1.5rem 1rem;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer {
+  padding: 1rem;
+  height: 9rem;
+  width: 100%;
+  background-color: #977762;
+}
+.icon {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.resize-icon,
+.resize-icon2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem 1rem;
+}
+.footer p {
+  color: white;
+  text-align: center;
+}
+.copyright {
+  margin-top: 0.3rem;
+}
+
+/* responsive */
+@media only screen and (max-width: 530px) and (min-width: 300px) {
+  .title {
+    color: white;
+    width: 100%;
+    padding-top: 1.3rem;
+    text-align: center;
+  }
+  .toggle-btn {
+    display: flex;
+  }
+  .menu-links {
+    display: none;
+  }
+  .rectangle2 {
+    width: 100%;
+    height: auto;
+  }
+  .rectangles {
+    width: 100%;
+  }
+  .space {
+    width: 100%;
+    margin: 1rem;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .menu ul {
+    margin: auto;
+  }
+
+  .menu li a:hover {
+    text-shadow: none;
+    background-color: white;
+  }
+  .menu-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu-links li {
+    text-align: center;
+  }
+  .menu-links li a {
+    padding: 1rem 1.5rem;
+  }
+  .menu-links.active {
+    display: flex;
+  }
+  .banner {
+    width: 100%;
+    height: 15rem;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+  .banner2 {
+    height: 6rem;
+    width: 100%;
+    background-image: url(assets/melt2.png);
+    background-size: cover;
+  }
+  .content p {
+    font-size: 0.8rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding-top: 7rem;
+  }
+  .rectangle3 {
+    padding-top: 2rem;
+    height: 28rem;
+  }
+  .resize {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
+  .circle {
+    height: 4rem;
+    width: 4rem;
+  }
+  .layer {
+    height: 3.4rem;
+    width: 3.4rem;
+    font-size: 0.5rem;
+  }
+  .layer:hover {
+    font-size: 0.5rem;
+  }
+  .rectangle3 h3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 2.5rem;
+  }
+  .resize-icon,
+  .resize-icon2 {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 1rem;
+  }
+  .footer p {
+    color: white;
+    text-align: center;
+  }
+  .copyright {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 531px) {
+  .title {
+    color: white;
+    width: 100%;
+    padding-top: 1.3rem;
+    text-align: center;
+  }
+  .rectangle2 {
+    width: 100%;
+  }
+  .rectangles {
+    width: 100%;
+  }
+  .menu ul {
+    margin: auto;
+  }
+  .menu-links li a {
+    padding: 1rem 1.5rem;
+  }
+  .banner {
+    width: 100%;
+    height: 17rem;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+  .banner2 {
+    height: 6rem;
+    width: 100%;
+    background-image: url(assets/melt2.png);
+    background-size: cover;
+  }
+  .content p {
+    font-size: 1.2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding-top: 7rem;
+  }
+  .rectangle3 {
+    padding-top: 3rem;
+    height: 35rem;
+  }
+  .resize {
+    height: 5.4rem;
+    width: 5.4rem;
+  }
+  .circle {
+    height: 6rem;
+    width: 6rem;
+  }
+  .layer {
+    height: 5.4rem;
+    width: 5.4rem;
+    font-size: 0.8rem;
+  }
+  .layer:hover {
+    font-size: 0.8rem;
+  }
+  .rectangle3 h3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 2.5rem;
+  }
+  .resize-icon,
+  .resize-icon2 {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem 1rem;
+  }
+  .footer p {
+    color: white;
+    text-align: center;
+  }
+  .copyright {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+  }
+}
+@media only screen and (max-width: 1300px) and (min-width: 769px) {
+  .title {
+    color: white;
+    width: 100%;
+    padding-top: 1.3rem;
+    text-align: center;
+  }
+  .rectangle2 {
+    width: 100%;
+  }
+  .rectangles {
+    width: 100%;
+  }
+  .menu ul {
+    margin: auto;
+  }
+  .menu-links li a {
+    padding: 1rem 1.5rem;
+  }
+  .banner {
+    width: 100%;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+  .banner2 {
+    width: 100%;
+    background-image: url(assets/melt2.png);
+    background-size: cover;
+  }
+  .content p {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding-top: 11rem;
+  }
+  .rectangle3 {
+    padding-top: 3rem;
+    height: 44.5rem;
+  }
+  .resize {
+    height: 7.4rem;
+    width: 7.4rem;
+  }
+  .circle {
+    height: 8rem;
+    width: 8rem;
+  }
+  .layer {
+    height: 7.4rem;
+    width: 7.4rem;
+    font-size: 1rem;
+  }
+  .layer:hover {
+    font-size: 1rem;
+  }
+  .rectangle3 h3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* padding-top: 2.5rem; */
+  }
+  .resize-icon,
+  .resize-icon2 {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem 1rem;
+  }
+  .footer p {
+    color: white;
+    text-align: center;
+  }
+  .copyright {
+    margin-top: 0.3rem;
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="purchase.css" />
+    <script src="purchase.js" defer></script>
+    <title>CHocs</title>
+  </head>
+  <body>
+    <header>
+      <div class="container brown">
+        <div class="rectangle">
+          <div class="logo">
+            <!-- bwh ini ntar diisi relative path utk image logo -->
+            <img src="assets/logo.png" alt="" />
+          </div>
+        </div>
+        <div class="title">
+          <h1>CHocs</h1>
+        </div>
+      </div>
+      <div class="yellow">
+        <div class="rectangle2">
+          <div class="menu">
+            <div class="space">
+              <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </a>
+            </div>
+            <div class="menu-links">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="products.html">Products</a>
+                </li>
+                <li>
+                  <a href="purchase.html">Purchase</a>
+                </li>
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="location.html">Location</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="template">
+        <div class="item">
+          <div class="box">
+            <!-- <form action="" onsubmit="() => location.reload()"> ga bisa -->
+            <form>
+              <div class="form">
+                <label for="input-name">Name: </label>
+                <input type="text" name="" id="input-name" />
+              </div>
+
+              <div class="form">
+                <label for="input-phone">Phone: </label>
+                <input type="text" name="" id="input-phone" />
+              </div>
+
+              <div class="form">
+                <label for="input-quantity">Quantity: </label>
+                <input type="number" name="quantity" id="input-quantity" />
+              </div>
+
+              <div class="form">
+                <label for="input-product-choice">Product Choice: </label>
+                <br /><select name="" id="input-product-choice">
+                  <option value="">Select product</option>
+                  <option value="1">Chocs Brownie</option>
+                  <option value="2">Chocolate Berry Cake</option>
+                  <option value="3">CHocs Mini Cake</option>
+                  <option value="4">Dark Chocolate Mousse Cake</option>
+                  <option value="5">Dark Chocolate Pudding</option>
+                  <option value="6">Chocolate Marquise</option>
+                  <option value="7">CHocs Cookie</option>
+                  <option value="8">Chocolate Tiramisu</option>
+                </select>
+              </div>
+
+              <div class="form">
+                <label for="input-address">Address: </label>
+                <br /><textarea
+                  name=""
+                  id="input-address"
+                  cols="25"
+                  rows="4"
+                ></textarea>
+                <p class="error" id="error-message"></p>
+                <div class="button-container">
+                  <div class="button">
+                    <input type="submit" value="Submit" id="submit-btn" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <ul class="icon">
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img class="resize-icon" src="assets/ig.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.whatsapp.com/" target="_blank"
+              ><img class="resize-icon2" src="assets/WhatsApp.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <p>Copyright © 2022 CHocs. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

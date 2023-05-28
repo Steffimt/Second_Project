@@ -1,0 +1,387 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+.container {
+  display: flex;
+  width: 100%;
+  z-index: 2;
+}
+.brown {
+  background-color: #441f17;
+}
+.rectangle {
+  height: 5rem;
+  display: flex;
+}
+.yellow {
+  background-color: #f4f0db;
+}
+.rectangle2 {
+  width: 100%;
+  height: 3rem;
+}
+.logo img {
+  margin: 1rem;
+  width: 3.5rem;
+  height: 3rem;
+  position: absolute;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  color: white;
+  width: 100%;
+  padding-top: 1.3rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.menu ul {
+  margin-top: 0.9rem;
+  list-style: none;
+  display: flex;
+}
+.menu li a {
+  font-family: cursive;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+  padding: 0 1.5rem;
+  display: block;
+}
+.menu li a:hover {
+  text-shadow: 2px 2px 4px #441f17;
+}
+.toggle-btn {
+  position: absolute;
+  top: 5.5rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.8rem;
+  height: 1rem;
+}
+.toggle-btn .bar {
+  height: 2.5px;
+  width: 100%;
+  background-color: #441f17;
+  border-radius: 10px;
+}
+.pic {
+  /* margin-top: 3rem; */
+  height: 35rem;
+  background-image: url(assets/store.jpg);
+  background-size: cover;
+  width: 100%;
+}
+.content {
+  /* width: 100%; */
+  background-color: #705651;
+  padding-top: 4rem;
+  justify-content: center;
+}
+.story p {
+  text-align: center;
+  color: white;
+  font-size: 2.3rem;
+  margin: 4rem 6rem;
+}
+.content h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  color: white;
+}
+.product-img img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.items {
+  padding: 0 4rem;
+  padding-bottom: 4rem;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  align-items: center;
+}
+
+.product-text {
+  margin: 4rem;
+  width: 70%;
+}
+
+.product-text h5 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #bba14f;
+}
+
+.product-text p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 2rem;
+  color: white;
+}
+.ingredients h2 {
+  display: inline-block;
+  color: #bba14f;
+}
+.footer {
+  padding: 1rem;
+  height: 9rem;
+  width: 100%;
+  background-color: #977762;
+}
+.icon {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.resize-icon,
+.resize-icon2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem 1rem;
+}
+.footer p {
+  color: white;
+  text-align: center;
+}
+.copyright {
+  margin-top: 0.3rem;
+}
+/* responsive */
+@media only screen and (max-width: 530px) and (min-width: 300px) {
+  .toggle-btn {
+    display: flex;
+  }
+  .menu-links {
+    display: none;
+  }
+  .rectangle2 {
+    width: 100%;
+    height: auto;
+  }
+  .space {
+    width: 100%;
+    margin: 1rem;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .menu ul {
+    margin: auto;
+  }
+  .menu li a:hover {
+    text-shadow: none;
+    background-color: white;
+  }
+  .menu-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu-links li {
+    text-align: center;
+  }
+  .menu-links li a {
+    padding: 1rem 1.5rem;
+  }
+  .menu-links.active {
+    display: flex;
+  }
+  .pic {
+    height: 20rem;
+    background-image: url(assets/store.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  .story p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    margin: 4rem 4rem;
+  }
+  .items {
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+  }
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+  }
+  .product-text {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .content h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: white;
+  }
+  .product-img img {
+    margin-left: 2rem;
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+  }
+  .product-text p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.8rem;
+    color: white;
+  }
+  .product-text h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #bba14f;
+  }
+  .resize-icon,
+  .resize-icon2 {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 1rem;
+  }
+  .copyright {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 531px) {
+  .rectangle2 {
+    width: 100%;
+    height: auto;
+  }
+  .menu ul {
+    margin: auto;
+  }
+  .menu-links li a {
+    padding: 1rem 1.5rem;
+  }
+  .pic {
+    margin-top: 3rem;
+    height: 25rem;
+    background-image: url(assets/store.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  .story p {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin: 4rem 3rem;
+  }
+  .items {
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+  }
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+  }
+  .product-text {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .content h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: white;
+  }
+  .product-img img {
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+  }
+  .product-text p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.3rem;
+    color: white;
+  }
+  .product-text h5 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #bba14f;
+  }
+}
+@media only screen and (max-width: 1300px) and (min-width: 769px) {
+  .rectangle2 {
+    width: 100%;
+    height: auto;
+  }
+  .menu ul {
+    margin: auto;
+  }
+  .menu-links li a {
+    padding: 1rem 1.5rem;
+  }
+  .pic {
+    background-image: url(assets/store.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  .story p {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    margin: 4rem 3rem;
+  }
+  .items {
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+  }
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+  }
+  .product-text {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .content h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: white;
+  }
+  .product-img img {
+    margin-left: 2rem;
+    margin-bottom: 3.5rem;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+  }
+  .product-text p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .product-text h5 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #bba14f;
+  }
+}
